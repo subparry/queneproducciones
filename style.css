@@ -1,0 +1,84 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+a.navbar-brand {
+    padding: 0 5px;
+}
+
+.jumbotron {
+    height: 75vh;
+    margin: 0 5%;
+    background-image: linear-gradient(to right bottom,
+        rgba(255, 187, 170, 0.7),
+        rgba(210, 112, 88, 0.7)),
+        url("http://flypaper.soundfly.com/wp-content/uploads/2016/02/sheet-music-fb.jpg");
+        clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 0);
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    text-align: center;
+    animation: moveInRight 1s ease-out;
+}
+
+.jumbotron h2 {
+    text-align: center;
+    animation: moveInLeft 1s ease-out;
+}
+
+.jumbotron p {
+    text-align: center;
+    animation: moveInBottom 1s ease-out;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+.jumbotron .container {
+    margin-top: 5%;
+}
+
+.page-header {
+    margin-left: 30px;
+}
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    70% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    70% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
