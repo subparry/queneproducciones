@@ -1,10 +1,14 @@
 body {
-    margin: 0 auto;
-    padding: 0;
+    margin-top: 70px;
 }
 
 a.navbar-brand {
     padding: 0 5px;
+}
+
+nav {
+    font-size: 120%;
+    font-weight: 800;
 }
 
 .jumbotron {
